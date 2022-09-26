@@ -25,7 +25,7 @@ spring:
     database: 0
 
 oss:
-  accessKey: kF0_oYg1MrGDnDdmrTDzpOcDueS9pdOnATw1BfeE
-  secretKey: fGRdkG4NRC10imLFIcNcxnLKemqVqtv-IjdZnkqO
-  bucket: dwblog-v1
+   accessKey: your accessKey
+   secretKey: your secretKey
+   bucket: your bucket
 
