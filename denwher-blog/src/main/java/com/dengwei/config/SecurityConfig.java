@@ -44,6 +44,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Override
+    public void configure(WebSecurity web) throws Exception {
+        // 配置静态文件不被security拦截
+        web.ignoring().antMatchers("/login","/static/css/**","/static/js/**", "/static/index.html","/static/img/**","/static/font/**","/static/favicon.ico");
+    }
+
+    @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
                 //关闭csrf
@@ -75,6 +81,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         //允许跨域
         http.cors();
     }
-
 
 }

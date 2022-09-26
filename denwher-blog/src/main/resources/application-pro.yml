@@ -1,0 +1,31 @@
+server:
+  port: 7777
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: delFlag
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+      id-type: auto
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://101.37.91.33:13061/sg_blog?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 111111
+  redis:
+    host: 101.37.91.33
+    port: 6379
+    password: 123321
+    database: 0
+
+oss:
+  accessKey: kF0_oYg1MrGDnDdmrTDzpOcDueS9pdOnATw1BfeE
+  secretKey: fGRdkG4NRC10imLFIcNcxnLKemqVqtv-IjdZnkqO
+  bucket: dwblog-v1
+
